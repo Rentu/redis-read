@@ -4048,7 +4048,7 @@ int redisIsSupervised(int mode) {
     return 0;
 }
 
-
+// 入口函数
 int main(int argc, char **argv) {
     struct timeval tv;
     int j;
@@ -4080,6 +4080,7 @@ int main(int argc, char **argv) {
 #endif
 
     /* We need to initialize our libraries, and the server configuration. */
+    // 我们需要初始化我们的库和服务端配置
 #ifdef INIT_SETPROCTITLE_REPLACEMENT
     spt_init(argc, argv);
 #endif
